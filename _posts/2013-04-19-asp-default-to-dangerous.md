@@ -12,7 +12,7 @@ Save the user input in DB (using parametrized queries to prevent SQL injection) 
 
 HTML encoding is built into the ASP.NET framework real simply. This is how you do it:
 
-```
+```html
 <!-- ASP.NET 3.5 and below -->
 <%= Html.Encode(yourStuff) %>
 

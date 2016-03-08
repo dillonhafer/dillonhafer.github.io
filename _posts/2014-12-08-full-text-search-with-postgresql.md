@@ -14,7 +14,7 @@ Now we simply need to write queries against the text in the database! …. (mayb
 
 It turns out there are almost 800 PDFs (about 600,000 words). And using a PostgreSQL’s full text search known as ts_vector appears to only take a few seconds (2500ms)… but this is a naive assumption.
 
-```
+```sql
 -- Executing query:
 SELECT ("sections".*)
 FROM "sections"
@@ -25,7 +25,7 @@ Total query runtime: 2673 ms.
 
 The reason this approach is “naive” is because  we are not having to join this table against any other table yet. Remember this application manages multiple districts. In this case, it’s more useful to be able to perform full text search only on the PDFs in a given school district. But this makes it 10 times slower, literally…
 
-```
+```sql
 -- Executing query:
 SELECT ("sections".*)
 FROM "sections"
@@ -47,7 +47,7 @@ PostgreSQL has [very good documentation](http://www.postgresql.org/docs/9.5/stat
 
 We will be using the gin index because it is 3-times faster than gist, and gist indexes have the possibility of returning “false matches”. There are some drawbacks to gin, primarily slow index creation speeds and larger space required to store the index, but those aren’t enough to avoid them for this case.
 
-```
+```sql
 CREATE INDEX file_text_idx
   ON sections
   USING gin
@@ -66,7 +66,7 @@ From now on 2 parameters are needed to use the index:
 
 If we did not include ‘english’, the index would never be used.
 
-```
+```sql
 -- Executing query:
 SELECT ("sections".*)
 FROM "sections"

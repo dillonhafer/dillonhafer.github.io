@@ -24,7 +24,7 @@ So how can we allow updated information to propagate from the Item‘s other bel
 
 As we look at our cache key, we notice it’s based on the maximum updated time of our Item model, and we take no account for its other relationships.
 
-```
+```ruby
 def complex_cache_key_for(scope)
   count          = @department.send(scope).count
   max_updated_at = @department.send(scope).maximum(:updated_at).try(:utc).try(:to_s, :number)
@@ -38,7 +38,7 @@ The solution can actually be quite simple. We need to rewrite the way we calcula
 
 First, let’s give every model a method they can use to determine their default cache key.
 
-```
+```ruby
 module CollectionCacheKey
   extend ActiveSupport::Concern
 
@@ -55,7 +55,7 @@ ActiveRecord::Base.send(:include, CollectionCacheKey)
 
 With all of our models now able to use this collection_cache_key method, we can update our helper method like so:
 
-```
+```ruby
 def complex_cache_key_for(scope)
   collection_cache_key = @department.send(scope).collection_cache_key
   ".../dept/#{@department.id}/#{...}/#{type}/all-#{collection_cache_key}"
@@ -70,7 +70,7 @@ Here we don’t want to use the SQL function MAX() because we need to return two
 
 NOTE: To avoid multiple queries, our view is using @department.items.includes(:location)
 
-```
+```ruby
 class Item < ActiveRecord::Base
   # ...
 
