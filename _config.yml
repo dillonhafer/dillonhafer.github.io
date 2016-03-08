@@ -9,7 +9,7 @@ email: dh[at]dillonhafer.com
 
 
 permalink: pretty
-highlighter: rougue
+highlighter: rouge
 
 defaults:
   - scope:
