@@ -1,0 +1,24 @@
+name: Dillon Hafer
+author: Dillon Hafer
+baseurl: /
+description: Personl website
+github: http://www.github.com/dillonhafer
+twitter: http://www.twitter.com/dillonhafer
+linkedin: http://www.linkedin.com/in/dillonhafer
+email: dh[at]dillonhafer.com
+
+
+permalink: pretty
+highlighter: rougue
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

@@ -1,0 +1,37 @@
+<div class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <p class="navbar-brand">{{ site.name }}</p>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      <li><a href="/blog">Blog</a></li>
+      <!-- to come <li><a href="/projects">Projects</a></li> -->
+      <li><a href="/about">About</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+
+<!-- Sidebar -->
+<div id="sidebar-wrapper">
+  <ul class="sidebar-nav">
+    <li class="sidebar-brand"><a href="/"><h1 class="brand">{{ site.name }}</h1></a></li>
+    <hr />
+    <li><a href="/blog">Blog</a></li>
+    <!-- to come <li><a href="/projects">Projects</a></li> -->
+    <li><a href="/about">About</a></li>
+    <hr />
+    <div id="social-wrapper">
+      <li> <a target='_blank' title='Where the cool kids are' href="{{ site.twitter }}"><i class="fa fa-twitter-square"></i> @twitter</a></li>
+      <li> <a target='_blank' title='Professional' href="{{ site.linkedin }}"><i class="fa fa-linkedin-square"></i> linkedin</a> </li>
+      <li> <a target='_blank' title='Code. Juicy code.' href="{{ site.github }}"><i class="fa fa-github-square"></i> github</a> </li>
+    </div>
+  </ul>
+</div>
