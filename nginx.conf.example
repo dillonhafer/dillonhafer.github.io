@@ -1,0 +1,58 @@
+server {
+  listen 80;
+  listen [::]:80;
+  server_name dillonhafer.com;
+  return 301 http://www.dillonhafer.com$request_uri;
+}
+
+server {
+  listen 443 ssl;
+  listen [::]:443 ssl;
+  server_name dillonhafer.com;
+  ssl_certificate     /path/to/ssl.crt;
+  ssl_certificate_key /path/to/ssl.key;
+  return 301 https://www.dillonhafer.com$request_uri;
+}
+
+server {
+  listen 80;
+  listen 443 ssl;
+  listen [::]:80;
+  listen [::]:443 ssl;
+
+  server_name www.dillonhafer.com;
+  access_log  /var/log/dillonhafer.access.log;
+
+  # Force SSL
+  if ($scheme = http) {
+    rewrite ^ https://www.dillonhafer.com$request_uri permanent;
+  }
+
+  # SSL
+  ssl_certificate     /path/to/ssl.crt;
+  ssl_certificate_key /path/to/ssl.key;
+
+  ssl_session_cache shared:SSL:20m;
+  ssl_session_timeout 10m;
+  add_header X-Frame-Options DENY;
+  add_header Strict-Transport-Security max-age=0;
+  ssl_ciphers ECDH+AESGCM:ECDH+AES256:ECDH+AES128:DH+3DES:!ADH:!AECDH:!MD5;
+  ssl_prefer_server_ciphers on;
+  ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+
+  gzip            on;
+  gzip_types text/plain text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
+
+  location / {
+    proxy_pass https://dillonhafer.github.io/;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_buffering off;
+  }
+
+  # Deny all attempts to access hidden files such as .htaccess, .htpasswd, .DS_Store (Mac).
+  # Keep logging the requests to parse later (or to pass to firewall utilities such as fail2ban)
+  location ~ /\. {
+    deny all;
+  }
+}
