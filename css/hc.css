@@ -4,7 +4,8 @@ body
   background-color:#f0f0f0;
   width:100%;
   border-top:solid #6699FF;
-  border-width:4px
+  border-width:4px;
+  padding-bottom: 30px;
 }
 
 h1,h2,h3,h4,h5,h6
