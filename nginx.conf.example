@@ -43,6 +43,10 @@ server {
   gzip            on;
   gzip_types text/plain text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
 
+  if (!-f "${request_filename}index.html") {
+    rewrite ^/(.*)/$ /$1 permanent;
+  }
+
   location / {
     proxy_pass https://dillonhafer.github.io/;
     proxy_set_header X-Real-IP $remote_addr;
