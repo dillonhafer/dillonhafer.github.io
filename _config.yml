@@ -8,12 +8,13 @@ linkedin: http://www.linkedin.com/in/dillonhafer
 email: dh[at]dillonhafer.com
 
 
-permalink: pretty
+permalink: /:year/:month/:day/:title
 highlighter: rouge
 
 defaults:
   - scope:
       path: ""
+      permalink: /:title
       type: "pages"
     values:
       layout: "default"
