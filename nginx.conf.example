@@ -1,11 +1,6 @@
 server {
   listen 80;
   listen [::]:80;
-  server_name dillonhafer.com;
-  return 301 http://www.dillonhafer.com$request_uri;
-}
-
-server {
   listen 443 ssl;
   listen [::]:443 ssl;
   server_name dillonhafer.com;
