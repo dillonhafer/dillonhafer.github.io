@@ -59,7 +59,7 @@ p
   transition: height 0.3s linear, padding-top 0.3s linear, padding-bottom 0.3s linear, border-top-width 0.3s linear, border-top-width 0.3s linear;
 }
 
-.project-box.toggled .post {
+.project-box.toggled > .post {
   overflow: hidden;
   padding-top: 0;
   padding-bottom: 0;
