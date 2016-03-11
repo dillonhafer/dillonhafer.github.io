@@ -13,3 +13,25 @@ layout: default
   </div>
 </div>
 {% include pager.html %}
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "item": {
+      "@id": "https://www.dillonhafer.com/posts",
+      "name": "Posts"
+    }
+  },{
+    "@type": "ListItem",
+    "position": 2,
+    "item": {
+      "@id": "https://www.dillonhafer.com{{ page.url }}",
+      "name": "{{ page.title }}"
+    }
+  }]
+}
+</script>
