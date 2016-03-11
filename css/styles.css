@@ -68,9 +68,10 @@ p
   border-width: 0 1px;
 }
 
-.homepage-posts
+.homepage-posts, .posts
 {
-  list-style:none
+  list-style:none;
+  padding-left: 0;
 }
 
 .container
@@ -563,7 +564,7 @@ time
   background-color:#f9f9f9;
   box-shadow:1px 1px 0 1px #e8e8e8;
   max-width:800px;
-  padding:10px 40px 0
+  padding:10px 40px 10px
 }
 
 .user-card h1
