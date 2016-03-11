@@ -101,7 +101,13 @@ p
 .navbar a
 {
   text-decoration: none;
-  border-bottom: 1px #b1b1b1 solid;
+  border-bottom: 1px #CCC solid;
+}
+
+.navbar li:last-child a
+{
+  text-decoration: none;
+  border-bottom: none;
 }
 
 #sidebar-wrapper
@@ -741,6 +747,14 @@ time
   display: inherit;
   background-color: #ededed;
   margin-top: -20px;
+}
+
+.navbar-brand a {
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: none;
+  font-size: 24px;
+  color: #999;
 }
 
 }
