@@ -2,7 +2,16 @@
 layout: default
 ---
 <div class="article">
-  <div class="article-title">{{ page.title }}</div>
+  <div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+    <a href="/posts" itemprop="url" class='breadcrumb'>
+      ← All <span itemprop="title">Posts</span>
+    </a>
+  </div>
+  <div itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="article-title">
+    <a href='{{page.url}}' itemprop="url" title='{{page.title}}'>
+      <span itemprop="title">{{ page.title }}</span>
+    </a>
+  </div>
   <p class="meta">
     &nbsp;<i class="fa fa-calendar-o"></i> {{ page.date | date_to_string}}
   </p>
@@ -12,25 +21,3 @@ layout: default
   </div>
 </div>
 {% include pager.html %}
-
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [{
-    "@type": "ListItem",
-    "position": 1,
-    "item": {
-      "@id": "https://www.dillonhafer.com/posts",
-      "name": "Posts"
-    }
-  },{
-    "@type": "ListItem",
-    "position": 2,
-    "item": {
-      "@id": "https://www.dillonhafer.com{{ page.url }}",
-      "name": "{{ page.title }}"
-    }
-  }]
-}
-</script>

@@ -10,7 +10,12 @@ title: About
             <img src="/images/self.jpg">
           </div>
           <div class="col-md-9">
-            <h1>Dillon Hafer</h1>
+            <div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+              <a href="/about" itemprop="url">
+                <h1><span itemprop="title">About</span> Dillon Hafer</h1>
+              </a>
+            </div>
+
             <p><i class="fa fa-map-marker"></i>&nbsp;&nbsp;41°51'00"N   87°39'00"W</p>
             <p><i class="fa fa-envelope-o"></i>&nbsp;hello@dillonhafer.com </p>
             <hr />
@@ -29,18 +34,3 @@ title: About
     </div>
   </div>
 </div>
-
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [{
-    "@type": "ListItem",
-    "position": 1,
-    "item": {
-      "@id": "https://www.dillonhafer.com/about",
-      "name": "About"
-    }
-  }]
-}
-</script>
