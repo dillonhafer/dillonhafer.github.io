@@ -1,0 +1,228 @@
+.navbar
+  position: relative
+  min-height: 50px
+  margin-bottom: 20px
+  border: 1px solid transparent
+  display: none
+
+  & a
+    text-decoration: none
+    border-bottom: 1px #CCC solid
+
+  & li:last-child a
+    text-decoration: none
+    border-bottom: none
+
+  &:before, &:after
+    display: table
+    content: " "
+
+.navbar-default
+  background-color: #f8f8f8
+  border-color: #e7e7e7
+  & .navbar-toggle
+    border-color: #ddd
+
+  & .navbar-toggle .icon-bar
+    background-color: #ccc
+
+  & .navbar-brand
+    color: #777
+
+  & .navbar-collapse, & .navbar-form
+    border-color: #e7e7e7
+
+  & .navbar-nav > li > a
+    color: #777
+
+.nav-toggle
+  display: none
+  color: $primary-color
+  padding-left: 10px
+  padding-top: 10px
+
+.navbar-toggle
+  position: relative
+  float: right
+  padding: 9px 10px
+  margin-top: 8px
+  margin-right: 15px
+  margin-bottom: 8px
+  background-color: transparent
+  border: 1px solid transparent
+  border-radius: 4px
+
+  & .icon-bar
+    display: block
+    width: 22px
+    height: 2px
+    border-radius: 1px
+    & + .icon-bar
+      margin-top: 4px
+
+.sr-only
+  position: absolute
+  width: 1px
+  height: 1px
+  padding: 0
+  margin: -1px
+  overflow: hidden
+  clip: rect(0,0,0,0)
+  border: 0
+
+.navbar-brand
+  float: left
+  padding: 15px 15px
+  font-size: 18px
+  line-height: 20px
+
+.navbar-collapse
+  max-height: 340px
+  padding-right: 15px
+  padding-left: 15px
+  overflow-x: visible
+  border-top: 1px solid transparent
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.1)
+  -webkit-overflow-scrolling: touch
+
+  &:before, &:after
+    display: table
+    content: " "
+
+.collapse
+  display: none
+
+.navbar-nav
+  margin: 7.5px -15px
+  & > li > a
+    padding-top: 10px
+    padding-bottom: 10px
+    line-height: 20px
+
+.nav
+  padding-left: 0
+  margin-bottom: 0
+  list-style: none
+  &:before, &:after
+    display: table
+    content: " "
+
+  & > li
+    position: relative
+    display: block
+    & > a
+      position: relative
+      display: block
+      padding: 10px 15px
+
+.navbar-header
+  &:after
+    clear: both
+
+  &:before, &:after
+    display: table
+    content: " "
+
+
+.sidebar-wrapper
+  margin-left: -250px
+  left: 250px
+  width: 250px
+  background: #f8f8f8
+  position: fixed
+  height: 100%
+  overflow-y: auto
+  z-index: 1000
+  margin-top: -4px
+  border-top: solid $primary-color
+  transition: all .4s ease 0
+  border-width: 4px
+
+
+.sidebar-nav
+  position: absolute
+  top: 0
+  width: 250px
+  list-style: none
+  margin: 0
+  padding: 30px 0 0
+  .brand
+    font-weight: 800
+    color: #6c7077
+    font-family: "Helvetica Neue", helvetica,sans-serif
+    font-size: 1.4em
+    text-shadow: 1px 1px #fff
+    &:hover
+      color: $primary-color
+      -o-transition: .5s
+      -ms-transition: .5s
+      -moz-transition: .5s
+      -webkit-transition: .5s
+      transition: .5s
+
+  li
+    line-height: 30px
+    text-indent: 40px
+    font-family: "Helvetica Neue", helvetica, sans-serif
+    font-weight: 200
+    color: #9c9c9c
+    text-shadow: 1px 1px #fff
+
+    a
+      color: #999
+      display: block
+      text-decoration: none
+      &:hover
+        color: #000
+        background: #fff
+        transition: all .2s ease 0
+
+  & > .sidebar-brand
+    font-size: 20px
+    a
+      color: #999
+      &:hover
+        background-color: transparent
+        color: #fff
+
+    & > h3
+      font-size: 15px
+      font-weight: 100
+      color: #5d5f67
+
+.social-wrapper
+  color: #5c646f
+  padding: 10px 0
+  a
+    font-size: 15px
+    text-indent: 20px
+    &:hover
+      color: #2d1e18
+      transition: all .3s ease 0
+  li
+    font-size: 15px
+    text-indent: 0
+    word-spacing: 10px
+
+@media (max-width: 767px)
+  .navbar
+    display: inherit
+    background-color: #ededed
+    margin-top: -20px
+
+  .navbar-brand a
+    text-decoration: none
+    font-weight: bold
+    border-bottom: none
+    font-size: 24px
+    color: #999
+
+  .sidebar-wrapper
+    border-right: 4px solid $primary-color
+    border-top: none
+    left: 0px
+
+  .wrapper.active .sidebar-wrapper
+    left: 250px
+    width: 250px
+    transition: all 0.7s ease 0s

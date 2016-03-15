@@ -7,6 +7,8 @@ twitter: http://www.twitter.com/dillonhafer
 linkedin: http://www.linkedin.com/in/dillonhafer
 email: dh[at]dillonhafer.com
 
+sass:
+  sass_dir: _sass
 
 permalink: /:year/:month/:day/:title
 highlighter: rouge
