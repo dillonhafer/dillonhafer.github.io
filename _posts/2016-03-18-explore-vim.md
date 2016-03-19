@@ -1,3 +1,0 @@
-# Hello vim
-
-Test post
