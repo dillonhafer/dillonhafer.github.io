@@ -24,9 +24,9 @@
   <ul class="sidebar-nav">
     <li class="sidebar-brand"><a href="/"><h1 class="brand">{{ site.name }}</h1></a></li>
     <hr />
-    <li><a href="/posts">Posts</a></li>
-    <li><a href="/projects">Projects</a></li>
-    <li><a href="/about">About</a></li>
+    <li><a href="/posts"    {% if page.url == '/posts' or page.id %}class='active'{% endif %}>Posts</a></li>
+    <li><a href="/projects" {% if page.url == '/projects'         %}class='active'{% endif %}>Projects</a></li>
+    <li><a href="/about"    {% if page.url == '/about'            %}class='active'{% endif %}>About</a></li>
     <hr />
     <div class="social-wrapper">
       <li>
