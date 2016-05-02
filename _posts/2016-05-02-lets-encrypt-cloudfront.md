@@ -6,12 +6,14 @@ Using <a href="https://letsencrypt.org" target="_blank">Let's Encrypt</a> is ver
 Well, that's where things can get tricky, but here are the steps:
 
 1. Create a manual certificate and upload the `acme-challenge` files
-  ```
+
+  ```bash
   sudo letsencrypt-auto certonly --manual -d example.com -d www.example.com
   ```
 
 2. Upload the certificate to CloudFront
-  ```
+
+  ```bash
   cd /etc/letsencrypt/live/www.example.com &&
   aws iam upload-server-certificate \
   --server-certificate-name Name-in-dropdown \
