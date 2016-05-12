@@ -1,3 +1,7 @@
+---
+title: Verify TLS certs with private key
+---
+
 Hopefully you're never in a situation where you don't know what private key you used to generate your TLS certificate, but if you do... here's how you can check.
 
 __Note: this is better than uploading the certs to production to check on them 😉__
