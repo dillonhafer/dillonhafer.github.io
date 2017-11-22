@@ -57,7 +57,7 @@ CREATE INDEX file_text_idx
 Query returned successfully with no result in 3065 ms.
 ```
 
-Notice the word ‘english’ in the CREATE INDEX statement, this is very important. Because we are calling the to_tsvector function on a text column, and the column is not a tsvector column type, we must give the GIN INDEX a configuration parameter; in this case the word ‘english’, but you can use any word as a configuration parameter.
+Notice the word ‘english’ in the CREATE INDEX statement, this is very important. Because we are calling the to_tsvector function on a text column, and the column is not a tsvector column type, we must give the GIN INDEX a configuration parameter; in this case the word ‘english’.
 
 From now on 2 parameters are needed to use the index:
 
