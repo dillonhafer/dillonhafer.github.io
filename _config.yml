@@ -9,6 +9,9 @@ email: dh[at]dillonhafer.com
 
 sass:
   sass_dir: _sass
+  
+plugins:
+  - jekyll-feed
 
 permalink: /:year/:month/:day/:title
 highlighter: rouge
