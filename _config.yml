@@ -5,12 +5,14 @@ description: A place for blog posts, interesting links, things I learn, and more
 github: http://www.github.com/dillonhafer
 linkedin: http://www.linkedin.com/in/dillonhafer
 email: dh[at]dillonhafer.com
+url: https://dillonhafer.com
 
 sass:
   sass_dir: _sass
-  
+
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 permalink: /:year/:month/:day/:title
 highlighter: rouge
