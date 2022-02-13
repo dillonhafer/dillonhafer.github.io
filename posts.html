@@ -1,19 +1,19 @@
 ---
 title: Posts
 ---
-<div class="container" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<div class="" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
   <div class="article">
-  <h1><a href="/posts" itemprop="url"><span itemprop="title">Posts</span></a></h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-    <li>
-      <span>
-        <h4>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-          <time class="pull-right post-list">{{ post.date | date_to_string | date: "%b %-d, %Y"  }}</time>
-        </h4>
-      </span>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
+    <h1><a href="/posts" itemprop="url"><span itemprop="title">Posts</span></a></h1>
+    <ul class="posts">
+      {% for post in site.posts %}
+      <li>
+        <span class="post-row">
+          <h4>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </h4>
+          <time class="pull-right post-list">{{ post.date | date_to_string | date: "%b %-d, %Y" }}</time>
+        </span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
