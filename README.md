@@ -9,5 +9,5 @@ bundle exec jekyll serve
 Scrape til server:
 
 ```
-ruby scraper.rb dillonhafer
+ruby scraper.rb dillonhafer 10
 ```
