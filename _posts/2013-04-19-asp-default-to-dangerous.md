@@ -1,5 +1,6 @@
 ---
 title: ASP&#58; Default to Dangerous
+tag: C#
 ---
 
 ASP.net WebForms applications have always faced a very dangerous flaw: raw HTML, in user entered information, needing to be manually escaped.

@@ -1,5 +1,6 @@
 ---
 title: Respect Do Not Track 👁‍🗨
+tag: javascript
 ---
 
 Before I put google analytics or other third party scripts on my sites I like to respects the [DNT](https://www.w3.org/2011/tracking-protection/drafts/tracking-dnt.html) headers a user has set. Here's how I do it with Google Analytics:

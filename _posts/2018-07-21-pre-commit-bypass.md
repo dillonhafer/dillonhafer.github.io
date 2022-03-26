@@ -1,5 +1,6 @@
 ---
 title: 🛣pre-commit bypass
+tag: git
 ---
 
 Sometimes you just want to make a `wip` commit, but the `flow` checker pre-commit hook won't let you... just bypass the hook!

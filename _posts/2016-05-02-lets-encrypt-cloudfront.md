@@ -1,5 +1,6 @@
 ---
 title: Let's Encrypt Cloudfront
+tag: workflow
 ---
 
 Using <a href="https://letsencrypt.org" target="_blank">Let's Encrypt</a> is very simple for standalone Nginx or Apache configs, but what if you want to use a Let's Encrypt certificate on Amazons's CloudFront?

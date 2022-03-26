@@ -1,5 +1,6 @@
 ---
 title: Find host and port in development
+tag: rails
 ---
 
 Rails `5.1` is a little different the pre `5.1`

@@ -1,5 +1,6 @@
 ---
 title: Complex Fragment Caching with Rails
+tag: rails
 ---
 
 **I CAN ONLY BEGIN THIS POST WITH THE INFAMOUS QUOTE FROM PHIL KARLTON:**

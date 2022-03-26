@@ -1,5 +1,6 @@
 ---
 title:  Testing Subdomains with Capybara
+tag: rails
 ---
 
 Sometimes you’ll need to test subdomains. Here’s an easy helper method to do so.

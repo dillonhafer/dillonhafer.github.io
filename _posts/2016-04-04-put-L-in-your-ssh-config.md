@@ -1,5 +1,6 @@
 ---
 title: Put -L in your ssh config
+tag: workflow
 ---
 
 If you've used `ssh` you've probably had to use local port forwarding before.

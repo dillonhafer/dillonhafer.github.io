@@ -1,5 +1,6 @@
 ---
 title: Chaining TLS Certificates 🐱
+tag: workflow
 ---
 
 Apache allows you to declare an intermediate TLS certificate along with your regular certificate in your configuration, but many web servers only allow you to provide one certificate option. Like Nginx, go, or heroku.

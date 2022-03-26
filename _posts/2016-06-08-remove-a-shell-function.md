@@ -1,5 +1,6 @@
 ---
 title: Remove A Shell Function
+tag: shell
 ---
 
 Say you wrote a function that you don't want anymore:

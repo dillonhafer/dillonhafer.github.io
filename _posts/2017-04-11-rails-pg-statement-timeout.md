@@ -1,5 +1,6 @@
 ---
 title: Rails/PG Statement Timeout 🐘⏰
+tag: rails
 ---
 
 By default, Rails does not set a timeout on database statements. For example, this will run for a full day, even if your ruby process goes away.

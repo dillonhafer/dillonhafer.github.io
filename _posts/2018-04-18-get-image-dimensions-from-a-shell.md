@@ -1,5 +1,6 @@
 ---
 title: 🖼🐚 Get image dimensions from a shell
+tag: workflow
 ---
 
 The BSD `file` program can reveal image dimensions from a shell:

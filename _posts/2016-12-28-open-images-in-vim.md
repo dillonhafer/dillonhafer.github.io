@@ -1,5 +1,6 @@
 ---
 title: Open images in vim with iTerm 🖼
+tag: vim
 ---
 
 iTerm 3 has a built in shell script called [imgcat](https://www.iterm2.com/documentation-images.html) for displaying images in the terminal. With one simple `autocmd` in my vim configuration I can open images*:

@@ -1,5 +1,6 @@
 ---
 title: 🆙 Update macOS from cli
+tag: workflow
 ---
 
 Opening the App Store and navigating to the update tab and clicking and confirming the update buttons is just too many steps for me.

@@ -1,5 +1,6 @@
 ---
 title: gcc case ranges
+tag: objective-c
 ---
 
 gcc has a C extension called "Case Ranges" that lets you specify consecutive values in a single `case` label.

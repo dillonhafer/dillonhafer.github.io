@@ -1,5 +1,6 @@
 ---
 title: Client Connection Vars with Ecto
+tag: elixir
 ---
 
 Postgres has dozens of connection variables it will take, a couple of my favorite ones are `statement_timeout` and `application_name`.

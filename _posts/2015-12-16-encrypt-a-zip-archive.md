@@ -1,5 +1,6 @@
 ---
 title: Encrypt A Zip Archive
+tag: workflow
 ---
 
 When you're using the `zip` CLI on your machine or a remote server and you need some extra security you can use the `-e` flag to encrypt a zip archive. Be sure to use a super long random password for this.

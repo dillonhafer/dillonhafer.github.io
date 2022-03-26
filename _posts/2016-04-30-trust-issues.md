@@ -1,5 +1,6 @@
 ---
 title: Trust Issues 🤔
+tag: workflow
 ---
 
 Our computers trust a scary amount of <a href="https://en.wikipedia.org/wiki/Root_certificate" target="_blank">Root Certificate Authorites</a>, and sometimes I have trust issues with some of them. Most recently being the <a href="http://www.whatissslcertificate.com/attackers-can-exploit-the-vulnerability-in-startssl-for-issuing-ssl-certificates/" target="_blank">StartCom</a> bug, which allowed anyone to get a certificate for any domain they wanted.

@@ -1,5 +1,6 @@
 ---
 title: Full Text Search with PostgreSQL
+tag: sql
 ---
 
 **LET’S GET SOME CONTEXT FIRST, USING A REAL-WORLD APPLICATION**

@@ -1,5 +1,6 @@
 ---
 title: Keep Mina Fast
+tag: rails
 ---
 
 One thing I've loved about [mina](http://nadarei.co/mina) is the speed of deployments. One way mina achieves fast deploys is by avoiding unnecessary tasks.

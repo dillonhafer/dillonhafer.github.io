@@ -1,5 +1,6 @@
 ---
 title: 🔑 Set foreign keys to null with Rails
+tag: rails
 ---
 
 Sometimes, in certain circumstances, it is reasonable to have a foreign key value of null.

@@ -1,5 +1,6 @@
 ---
 title: NODE_OPTIONS without node
+tag: javascript
 ---
 
 I was using [storybook](https://storybook.js.org/) and found it had grown so large that its node process would run out of memory before it could start. The downside was that the `storybook` command did not accept node arguments, like `--max_old_space_size=4096`

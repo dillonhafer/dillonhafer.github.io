@@ -1,5 +1,6 @@
 ---
 title: 🔢 CLI to bump iOS target versions
+tag: ios
 ---
 
 Bumping Info.plist versions by hand can be very error prone (e.g. remembering to bump multiple targets in a project)

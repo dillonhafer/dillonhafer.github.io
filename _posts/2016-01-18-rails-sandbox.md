@@ -1,5 +1,6 @@
 ---
 title: Rails Sandbox 🏖
+tag: rails
 ---
 
 When you are working with a complicated database structure, and find yourself needing to debug a complex or dangerous (delete) action, you might be hesitant to experiment. Keep experimenting! Don't want to setup all that data again? No worries. You can use a sandbox  `$ rails c -s`

@@ -1,5 +1,6 @@
 ---
 title: The Case of the Default 🕵
+tag: swift
 ---
 
 In Apple's Swift language switch statements must be what apple calls "exhaustive". I've felt the term to be very literal. Literally exhaustive?
