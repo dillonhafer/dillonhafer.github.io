@@ -9,7 +9,7 @@ title: Posts
       <li>
         <span class="post-row">
           <h4>
-            <a href="{{ post.url }}">{{ post.title }}</a>
+            <a href="{{ post.url }}">{{ post.title }} <span class="tag">#{{post.tag}}</span></a>
           </h4>
           <time class="pull-right post-list">{{ post.date | date_to_string | date: "%b %-d, %Y" }}</time>
         </span>
