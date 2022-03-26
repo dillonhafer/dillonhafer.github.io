@@ -1,5 +1,6 @@
 ---
-title: Check if string starts with character in PostgreSQL
+title: Check if string starts with character
+tag: sql
 ---
 
 Check if string starts with character
