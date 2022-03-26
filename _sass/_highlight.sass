@@ -1,17 +1,17 @@
 code, kbd, pre, samp
-  font-family: Monaco,Menlo,Consolas,"Courier New",monospace,serif
-  font-size: 1em
+  font-family: Consolas,Monaco,Menlo,Consolas,"Courier New",monospace,serif
+  font-size: 95%
 
 pre
-  padding: 9.5px
-  margin: 0 0 10px
+  padding: 2em
+  margin: 10px 0 10px
+  font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace
   font-size: 13px
   line-height: 1.428571429
   color: #eee
-  background-color: #f5f5f5
-  border: 1px solid #ccc
-  border-radius: 4px
+  background-color: #414347
   overflow: auto
+  line-height: 1.6
 
   & code
     padding: 0
@@ -30,9 +30,17 @@ code
   background-color: #f9f2f4
   border-radius: 4px
 
+p code.language-plaintext.highlighter-rouge
+  color: #414347
+  font-size: 75%
+  border-radius: 0.3em
+  background-color: #d5e9f5
+  padding: 0 0.4em
+  margin: 0 0.2em
+
 .highlight
   pre
-    background-color: #272822
+    background-color: #414347
   .hll
     background-color: #272822
   .c
@@ -41,13 +49,13 @@ code
     color: #960050
     background-color: #1e0010
   .k
-    color: #66d9ef
+    color: #cc99cd
   .l
     color: #ae81ff
   .n
     color: #f8f8f2
   .o
-    color: #f92672
+    color: #7ec699
   .p
     color: #f8f8f2
   .cm
@@ -85,9 +93,9 @@ code
   .nb
     color: #f8f8f2
   .nc
-    color: #a6e22e
+    color: #f8c555
   .no
-    color: #66d9ef
+    color: #f8c555
   .nd
     color: #a6e22e
   .ni
@@ -95,7 +103,7 @@ code
   .ne
     color: #a6e22e
   .nf
-    color: #a6e22e
+    color: #f08d49
   .nl
     color: #f8f8f2
   .nn
@@ -127,7 +135,7 @@ code
   .sd
     color: #e6db74
   .s2
-    color: #e6db74
+    color: #7ec699
   .se
     color: #ae81ff
   .sh
@@ -159,3 +167,5 @@ code
     color: #f92672
   .gi
     color: #a6e22e
+  .p ~ .nf
+    color: #ffffff
