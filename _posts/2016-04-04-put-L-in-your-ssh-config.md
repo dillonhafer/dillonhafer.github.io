@@ -3,13 +3,11 @@ title: Put -L in your ssh config
 tag: workflow
 ---
 
-If you've used `ssh` you've probably had to use local port forwarding before.
-If you use complex flags often, you will find remembering what you need is tiresome.
-Stop. Write it down so you can forget all about it. Save your memory.
+If you've used `ssh` you've probably had to use local port forwarding before. If you use complex flags often, you will find remembering what you need is tiresome. Stop. Write it down so you can forget all about it. Save your memory.
 
 Instead of doing this:
 
-```
+```sh
 ssh -L 3000:localhost:3002 not_dillon@example.com
 ```
 
@@ -26,6 +24,6 @@ Host example
 
 From now on, all you need to type is:
 
-```
+```sh
 ssh example
 ```

@@ -33,5 +33,3 @@ case 7:
 default: ()
 }
 ```
-
-h/t [Hashrocket til](https://til.hashrocket.com/posts/f54575d4ef-the-case-of-the-default-)

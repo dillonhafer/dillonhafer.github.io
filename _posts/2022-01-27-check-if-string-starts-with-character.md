@@ -3,8 +3,6 @@ title: Check if string starts with character
 tag: sql
 ---
 
-Check if string starts with character
-
 In ruby I would use something like 
 ```ruby
 "PostgreSQL".downcase.start_with?("p")

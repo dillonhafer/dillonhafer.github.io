@@ -1,6 +1,6 @@
 ---
-title: Keep Mina Fast
-tag: rails
+title: Keep mina fast
+tag: devops
 ---
 
 One thing I've loved about [mina](http://nadarei.co/mina) is the speed of deployments. One way mina achieves fast deploys is by avoiding unnecessary tasks.
@@ -26,5 +26,3 @@ task :install do
     ]
 end
 ```
-
-h/t [Hashrocket til](https://til.hashrocket.com/posts/00cb1df00b-keep-mina-fast)
