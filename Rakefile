@@ -4,8 +4,9 @@ task :server do
 end
 
 desc "Scrape"
-task :server do
-  `ruby scraper.rb dillonhafer 10`
+task :scrape, [:posts] do |t, args|
+  posts = args.fetch(:posts, 10)
+  `ruby scraper.rb dillonhafer #{posts}`
 end
 
 task default: :server
