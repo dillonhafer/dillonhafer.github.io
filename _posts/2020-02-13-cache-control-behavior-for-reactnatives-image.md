@@ -7,10 +7,10 @@ React Native's `Image` component accepts a `cache` property to override the cach
 
 ```tsx
 <Image
-  source={{
+  source={{ "{{" }}
     uri: "https://facebook.github.io/react/logo-og.png",
     cache: "only-if-cached"
   }}
-  style={{ width: 400, height: 400 }}
+  style={{ "{{" }} width: 400, height: 400 }}
 />
 ```
