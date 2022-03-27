@@ -1,6 +1,6 @@
 desc "Run dev server"
 task :server do
-  `bundle exec jekyll serve`
+  `open http://localhost:4000; bundle exec jekyll serve`
 end
 
 desc "Scrape"
