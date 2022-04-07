@@ -7,6 +7,7 @@ desc "Scrape"
 task :scrape, [:posts] do |t, args|
   posts = args.fetch(:posts, 10)
   `ruby scraper.rb dillonhafer #{posts}`
+  `dos2unix _posts/*`
 end
 
 task default: :server
