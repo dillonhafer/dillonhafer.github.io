@@ -17,10 +17,9 @@ So that you can run everything at once:
 
 ```sh
 $ bin/dev
-〉bin/dev
 08:36:10 web.1  | started with pid 40038
 08:36:10 css.1  | started with pid 40039
-08:36:10 fire.1 | started with pid 40040
+08:36:10 firebase.1 | started with pid 40040
 08:36:11 firebase.1 | i  emulators: Starting emulators: auth, firestore, storage
 08:36:11 firebase.1 | i  firestore: Firestore Emulator logging to firestore-debug.log
 08:36:11 web.1  | => Booting Puma
