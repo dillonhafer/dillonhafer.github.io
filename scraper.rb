@@ -51,7 +51,7 @@ class Article < Struct.new(:node, :author, keyword_init: true)
   private
 
   def date
-    node.css("time").first["datetime"].split.first
+    node.css("time").first["datetime"].split("T").first
   end
 
   def href
